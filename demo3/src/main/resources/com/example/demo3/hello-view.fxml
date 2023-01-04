@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="768.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <children>
+      <ListView fx:id="moviesListView" layoutX="139.0" layoutY="227.0" prefHeight="400.0" prefWidth="476.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ListView>
+      <Label alignment="TOP_CENTER" layoutX="276.0" layoutY="111.0" prefHeight="17.0" prefWidth="200.0" text="Movies">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Times New Roman Bold" size="47.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</Pane>
